@@ -1,0 +1,6 @@
+/.vscode
+/node_modules
+/env/dev_vars.js
+/unused
+/src/assets
+personalNotes.txt

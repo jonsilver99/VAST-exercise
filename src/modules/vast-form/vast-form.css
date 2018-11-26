@@ -1,0 +1,73 @@
+#vast-form {
+    display: flex;
+    font-size: 1rem;
+    flex-direction: column;
+    width: 500px;
+    margin: .25rem auto;
+}
+
+#form-head{
+    display: flex;
+    align-items: baseline;
+    white-space: nowrap;
+}
+
+#form-head h2 {
+    color: rgb(88, 88, 88);
+    margin-right: .5rem;
+    text-decoration: underline rgb(230, 114, 135);
+}
+
+#form-head #feedback{
+    display: flex;
+}
+
+#feedback #error-message {
+    color: red;
+    font-weight: initial;
+}
+
+#feedback #success-message {
+    color: rgb(15, 182, 15);
+    font-weight: initial;
+}    
+    
+#vast-form .field-wrapper {
+    display: flex;
+    margin: 0.75rem 0;
+    flex-direction: column;
+}
+
+#vast-form .field-wrapper.submit-field{
+    align-items: flex-end;
+}
+
+#vast-form label {
+    font-size: 1.15rem;
+    color: rgb(88, 88, 88);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+
+#vast-form select,
+#vast-form input[type="text"]{
+    padding: .75rem;
+    border: 0;
+    height: 2.5rem;
+    font-size: inherit;
+    flex: 4;
+}
+
+#vast-form button{
+    background: rgb(206, 79, 102);
+    padding: .75rem;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    height: 2.5rem;
+    font-size: inherit;
+    width: 150px;
+}

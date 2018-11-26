@@ -1,0 +1,45 @@
+#vast-viewer {
+    width: 640px;
+    height: 395px;
+    position: relative;
+    opacity: 0;
+    pointer-events: none;
+    background: #ebebeb;
+}
+
+#vast-viewer.revealed{
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Buttons */
+#vast-viewer #buttons-container{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+    width: 200px;
+}
+
+#vast-viewer #buttons-container > button{
+    flex: 1;
+    padding: .2rem;
+}
+
+/* Container */
+#vast-viewer .view-container {
+    max-height: 0%;
+    max-width: 0%;
+    overflow: hidden;
+    color: rgb(88, 88, 88);
+    font-weight: bold;
+}
+
+#vast-viewer .view-container.show{
+    max-height: 100%;
+    max-width: 100%;
+    overflow: auto;
+}

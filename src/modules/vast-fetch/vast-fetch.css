@@ -1,0 +1,40 @@
+/****************************
+        vast-fetch ui
+****************************/
+#vast-fetch-ui{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+#fetch-controls{
+    height: 4rem;
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#fetch-controls > button{
+    background: rgb(206, 79, 102);
+    padding: .75rem;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    height: 2.5rem;
+    font-size: inherit;
+}
+
+#fetch-controls > input[type="number"]{
+    padding: .75rem;
+    border: 0;
+    height: 2.5rem;
+    font-size: inherit;
+}
+
+#fetch-controls > label {
+    font-size: 1.15rem;
+    color: red;
+    margin-left: 1rem;
+}
