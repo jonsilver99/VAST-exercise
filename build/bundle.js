@@ -18948,7 +18948,6 @@ async function fetchVast(id) {
         // reveal vast viewer
         vastViewer.reveal();
         let vastUrl = `/vasts/fetch_vast?id=${id}`;
-        console.log('changed');
         // fetch vast xml
         let vastString = await $.ajax({ method: 'GET', url: vastUrl, dataType: 'text' });
         if (!vastString) throw 'Couldnt fetch vast string';
@@ -27167,7 +27166,7 @@ function initialize(parentContainer) {
 function postNewVast(inputs) {
     $.ajax({
         method: 'POST',
-        url: `http://localhost:4200/vasts/create_vast`,
+        url: `/vasts/create_vast`,
         data: inputs,
         dataType: 'json'
     }).then(res => {

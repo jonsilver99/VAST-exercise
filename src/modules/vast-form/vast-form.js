@@ -17,7 +17,7 @@ function initialize(parentContainer) {
 function postNewVast(inputs) {
     $.ajax({
         method: 'POST',
-        url: `http://localhost:4200/vasts/create_vast`,
+        url: `/vasts/create_vast`,
         data: inputs,
         dataType: 'json'
     })
