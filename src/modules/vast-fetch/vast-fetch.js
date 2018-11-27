@@ -27,6 +27,7 @@ async function fetchVast(id) {
         // reveal vast viewer
         vastViewer.reveal();
         let vastUrl = `/vasts/fetch_vast?id=${id}`;
+        console.log('changed')
         // fetch vast xml
         let vastString = await $.ajax({ method: 'GET', url: vastUrl, dataType: 'text' });
         if (!vastString) throw 'Couldnt fetch vast string';
