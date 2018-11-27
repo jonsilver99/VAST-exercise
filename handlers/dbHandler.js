@@ -30,7 +30,9 @@ function sanitize(input) {
     return input
 }
 
-function fetch(q) {
+function fetch(vastId) {
+    let q = `SELECT * FROM vasts WHERE id=${vastId}`    
+
     connect();
     return new Promise((resolve, reject) => {
         dbConnection.query(q, (err, results) => {
@@ -42,7 +44,9 @@ function fetch(q) {
     disconnect();
 }
 
-function insert(q) {
+function insert(vastData) {
+    let q = `INSERT INTO vasts (vast_url, position, hide_ui) VALUES (${vastData.vast_url}, ${vastData.position}, ${vastData.hide_ui})`;
+
     connect();
     return new Promise((resolve, reject) => {
         dbConnection.query(q, (err, result) => {
