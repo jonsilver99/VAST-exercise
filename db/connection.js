@@ -15,7 +15,8 @@ let env = (() => {
 const dbConnection = mysql.createConnection({
     host: env.DB_HOST,
     user: env.DB_USER,
-    password: env.DB_PASS
+    password: env.DB_PASS,
+    database: env.DB_SCHEMA
 });
 
 module.exports = dbConnection;

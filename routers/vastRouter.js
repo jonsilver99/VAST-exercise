@@ -10,7 +10,8 @@ router.get('/fetch_vast', async function (req, res) {
         // sanitize input
         let vastId = dbHandler.sanitize(req.query.id);
 
-        let q = `SELECT * FROM cheq_exercise.vasts WHERE id=${vastId}`
+        // let q = `SELECT * FROM cheq_exercise.vasts WHERE id=${vastId}`
+        let q = `SELECT * FROM vasts WHERE id=${vastId}`
         let vastData = await dbHandler.fetch(q) // get vast's data from db
         let vastXML;
         if (!vastData)
@@ -35,7 +36,8 @@ router.post('/create_vast', async function (req, res) {
         let vData = dbHandler.sanitize(req.body);
 
         // validate and sanitize all vData inputs
-        let q = `INSERT INTO cheq_exercise.vasts (vast_url, position, hide_ui) VALUES (${vData.vast_url}, ${vData.position}, ${vData.hide_ui})`;
+        // let q = `INSERT INTO cheq_exercise.vasts (vast_url, position, hide_ui) VALUES (${vData.vast_url}, ${vData.position}, ${vData.hide_ui})`;
+        let q = `INSERT INTO vasts (vast_url, position, hide_ui) VALUES (${vData.vast_url}, ${vData.position}, ${vData.hide_ui})`;
         let creation = await dbHandler.insert(q);
         return resHandler.success(res, 201, 'vast created', creation)
 
