@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 53);
+/******/ 	return __webpack_require__(__webpack_require__.s = 51);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1444,7 +1444,7 @@ function isPrimitive(arg) {
 }
 exports.isPrimitive = isPrimitive;
 
-exports.isBuffer = __webpack_require__(61);
+exports.isBuffer = __webpack_require__(60);
 
 function objectToString(o) {
   return Object.prototype.toString.call(o);
@@ -1636,7 +1636,7 @@ var util = __webpack_require__(10);
 util.inherits = __webpack_require__(5);
 /*</replacement>*/
 
-var Readable = __webpack_require__(45);
+var Readable = __webpack_require__(44);
 var Writable = __webpack_require__(30);
 
 util.inherits(Duplex, Readable);
@@ -1725,7 +1725,7 @@ Duplex.prototype._destroy = function (err, cb) {
 
 "use strict";
 
-var immediate = __webpack_require__(64);
+var immediate = __webpack_require__(63);
 
 /* istanbul ignore next */
 function INTERNAL() {}
@@ -12688,7 +12688,7 @@ return jQuery;
 
   XMLNode = __webpack_require__(0);
 
-  XMLAttribute = __webpack_require__(41);
+  XMLAttribute = __webpack_require__(40);
 
   module.exports = XMLElement = (function(superClass) {
     extend(XMLElement, superClass);
@@ -13577,7 +13577,7 @@ SafeBuffer.allocUnsafeSlow = function (size) {
 
   XMLDTDNotation = __webpack_require__(20);
 
-  XMLWriterBase = __webpack_require__(43);
+  XMLWriterBase = __webpack_require__(42);
 
   module.exports = XMLStringWriter = (function(superClass) {
     extend(XMLStringWriter, superClass);
@@ -13898,9 +13898,9 @@ SafeBuffer.allocUnsafeSlow = function (size) {
 
 
 
-var base64 = __webpack_require__(103)
-var ieee754 = __webpack_require__(104)
-var isArray = __webpack_require__(44)
+var base64 = __webpack_require__(102)
+var ieee754 = __webpack_require__(103)
+var isArray = __webpack_require__(43)
 
 exports.Buffer = Buffer
 exports.SlowBuffer = SlowBuffer
@@ -15684,13 +15684,13 @@ function isnan (val) {
 /* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(45);
+exports = module.exports = __webpack_require__(44);
 exports.Stream = exports;
 exports.Readable = exports;
 exports.Writable = __webpack_require__(30);
 exports.Duplex = __webpack_require__(7);
-exports.Transform = __webpack_require__(49);
-exports.PassThrough = __webpack_require__(111);
+exports.Transform = __webpack_require__(48);
+exports.PassThrough = __webpack_require__(110);
 
 
 /***/ }),
@@ -15770,12 +15770,12 @@ util.inherits = __webpack_require__(5);
 
 /*<replacement>*/
 var internalUtil = {
-  deprecate: __webpack_require__(110)
+  deprecate: __webpack_require__(109)
 };
 /*</replacement>*/
 
 /*<replacement>*/
-var Stream = __webpack_require__(46);
+var Stream = __webpack_require__(45);
 /*</replacement>*/
 
 /*<replacement>*/
@@ -15791,7 +15791,7 @@ function _isUint8Array(obj) {
 
 /*</replacement>*/
 
-var destroyImpl = __webpack_require__(47);
+var destroyImpl = __webpack_require__(46);
 
 util.inherits(Writable, Stream);
 
@@ -16385,7 +16385,7 @@ Writable.prototype._destroy = function (err, cb) {
   this.end();
   cb(err);
 };
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9), __webpack_require__(48).setImmediate, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(9), __webpack_require__(47).setImmediate, __webpack_require__(2)))
 
 /***/ }),
 /* 31 */
@@ -16691,31 +16691,6 @@ function simpleEnd(buf) {
 
 /***/ }),
 /* 32 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-const vastFetchTemplate = `
-    <div id="vast-fetch-ui">
-        <div id="fetch-controls">
-            <button id="fetch-button">Fetch</button>
-            <input id="fetch-input" type="number" placeholder="Enter vast id (i.e - 1, 2...)">
-            <label id="fetch-error"></label>
-        </div>
-        <div id="vast-viewer">
-            <div id="buttons-container">
-                <button id="show-xml">show xml</button>
-                <button id="show-video">show video</button>
-            </div>
-            <div id="xml-container" class="view-container"></div>
-            <div id="video-container" class="view-container"></div>
-        </div>
-    </div>
-`;
-/* harmony export (immutable) */ __webpack_exports__["a"] = vastFetchTemplate;
-
-
-/***/ }),
-/* 33 */
 /***/ (function(module, exports) {
 
 /**
@@ -16734,7 +16709,7 @@ module.exports = isObject;
 
 
 /***/ }),
-/* 34 */
+/* 33 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16753,7 +16728,7 @@ module.exports = function extend(/*...objects*/) {
 
 
 /***/ }),
-/* 35 */
+/* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16843,15 +16818,15 @@ module.exports = VPAID;
 
 
 /***/ }),
-/* 36 */
+/* 35 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var win = __webpack_require__(83);
+var win = __webpack_require__(82);
 var video = document.createElement('video');
-var MIME = __webpack_require__(37);
+var MIME = __webpack_require__(36);
 
 exports.isDesktop = !/Android|Silk|Mobile|PlayBook/.test(win.navigator.userAgent);
 
@@ -16890,7 +16865,7 @@ Object.freeze(exports);
 
 
 /***/ }),
-/* 37 */
+/* 36 */
 /***/ (function(module, exports) {
 
 var MIME = {
@@ -16904,7 +16879,7 @@ module.exports = MIME;
 
 
 /***/ }),
-/* 38 */
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16930,7 +16905,7 @@ module.exports = VPAIDVersion;
 
 
 /***/ }),
-/* 39 */
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -16975,7 +16950,7 @@ module.exports = HTML_MEDIA_EVENTS;
 
 
 /***/ }),
-/* 40 */
+/* 39 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17037,7 +17012,7 @@ module.exports = EventProxy;
 
 
 /***/ }),
-/* 41 */
+/* 40 */
 /***/ (function(module, exports) {
 
 // Generated by CoffeeScript 1.12.7
@@ -17074,7 +17049,7 @@ module.exports = EventProxy;
 
 
 /***/ }),
-/* 42 */
+/* 41 */
 /***/ (function(module, exports) {
 
 // Generated by CoffeeScript 1.12.7
@@ -17243,7 +17218,7 @@ module.exports = EventProxy;
 
 
 /***/ }),
-/* 43 */
+/* 42 */
 /***/ (function(module, exports) {
 
 // Generated by CoffeeScript 1.12.7
@@ -17339,7 +17314,7 @@ module.exports = EventProxy;
 
 
 /***/ }),
-/* 44 */
+/* 43 */
 /***/ (function(module, exports) {
 
 var toString = {}.toString;
@@ -17350,7 +17325,7 @@ module.exports = Array.isArray || function (arr) {
 
 
 /***/ }),
-/* 45 */
+/* 44 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17385,7 +17360,7 @@ var pna = __webpack_require__(24);
 module.exports = Readable;
 
 /*<replacement>*/
-var isArray = __webpack_require__(44);
+var isArray = __webpack_require__(43);
 /*</replacement>*/
 
 /*<replacement>*/
@@ -17403,7 +17378,7 @@ var EElistenerCount = function (emitter, type) {
 /*</replacement>*/
 
 /*<replacement>*/
-var Stream = __webpack_require__(46);
+var Stream = __webpack_require__(45);
 /*</replacement>*/
 
 /*<replacement>*/
@@ -17425,7 +17400,7 @@ util.inherits = __webpack_require__(5);
 /*</replacement>*/
 
 /*<replacement>*/
-var debugUtil = __webpack_require__(106);
+var debugUtil = __webpack_require__(105);
 var debug = void 0;
 if (debugUtil && debugUtil.debuglog) {
   debug = debugUtil.debuglog('stream');
@@ -17434,8 +17409,8 @@ if (debugUtil && debugUtil.debuglog) {
 }
 /*</replacement>*/
 
-var BufferList = __webpack_require__(107);
-var destroyImpl = __webpack_require__(47);
+var BufferList = __webpack_require__(106);
+var destroyImpl = __webpack_require__(46);
 var StringDecoder;
 
 util.inherits(Readable, Stream);
@@ -18376,14 +18351,14 @@ function indexOf(xs, x) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(9)))
 
 /***/ }),
-/* 46 */
+/* 45 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(1).EventEmitter;
 
 
 /***/ }),
-/* 47 */
+/* 46 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18463,7 +18438,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 48 */
+/* 47 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -18519,7 +18494,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(109);
+__webpack_require__(108);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -18533,7 +18508,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 49 */
+/* 48 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18753,7 +18728,7 @@ function done(stream, er, data) {
 }
 
 /***/ }),
-/* 50 */
+/* 49 */
 /***/ (function(module, exports) {
 
 // Generated by CoffeeScript 1.12.7
@@ -18793,7 +18768,7 @@ function done(stream, er, data) {
 
 
 /***/ }),
-/* 51 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -18815,71 +18790,17 @@ function extractErrorMessage(error) {
 
 
 /***/ }),
-/* 52 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-const vastFormTemplate = `
-<form id="vast-form" action="">
-
-    <div id="form-head">
-        <h2>New vast</h2>
-        <div id="feedback"></div>
-    </div>
-
-    <div class="field-wrapper">
-        <label for="">Vast url</label>
-        <input type="text" name="vast_url">
-    </div>
-
-    <div class="field-wrapper">
-        <label for="">Position</label>
-        <select name="position">
-            <option value="top_left">Top left</option>
-            <option value="top_middle">Top middle</option>
-            <option value="top_right">Top right</option>
-            <option value="middle_left">Middle left</option>
-            <option value="middle_right">Middle right</option>
-            <option value="bottom_left">Bottom left</option>
-            <option value="bottom_middle">Bottom middle</option>
-            <option value="bottom_right">Bottom right</option>
-        </select>
-    </div>
-
-    <div class="field-wrapper">
-        <label for="">Hide ui</label>
-        <select name="hide_ui">
-            <option value="0">False</option>
-            <option value="1">True</option>
-        </select>
-    </div>
-
-    <div class="field-wrapper submit-field">
-        <button type="submit">Create</button>
-    </div>
-
-</form>
-`;
-/* harmony export (immutable) */ __webpack_exports__["a"] = vastFormTemplate;
-
-
-/***/ }),
-/* 53 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_css__ = __webpack_require__(54);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_css__ = __webpack_require__(52);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__styles_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__styles_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_vast_fetch_vast_fetch__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_vast_fetch_template__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__modules_vast_form_vast_form__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__modules_vast_form_template__ = __webpack_require__(52);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__modules_vast_fetch_vast_fetch__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__modules_vast_form_vast_form__ = __webpack_require__(116);
 
-// vast-fetch module
-
-
-// vast-form module 
+// modules
 
 
 
@@ -18890,13 +18811,11 @@ $(document).ready(function () {
 
     toggleButtons.click(function () {
         let clicked = this;
-
         // highlight clicked button
         toggleButtons.removeClass('selected');
         $(clicked).addClass('selected');
-
         // append and initialize selected module
-        if (clicked.id == 'toggle-vast-fetch') __WEBPACK_IMPORTED_MODULE_1__modules_vast_fetch_vast_fetch__["a" /* vastFetch */].initialize(parentContainer);else if (clicked.id == 'toggle-vast-form') __WEBPACK_IMPORTED_MODULE_3__modules_vast_form_vast_form__["a" /* vastForm */].initialize(parentContainer);
+        if (clicked.id == 'toggle-vast-fetch') __WEBPACK_IMPORTED_MODULE_1__modules_vast_fetch_vast_fetch__["a" /* vastFetch */].initialize(parentContainer);else if (clicked.id == 'toggle-vast-form') __WEBPACK_IMPORTED_MODULE_2__modules_vast_form_vast_form__["a" /* vastForm */].initialize(parentContainer);
     });
 
     // initialize vastFetch module by default 
@@ -18905,23 +18824,23 @@ $(document).ready(function () {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(11)))
 
 /***/ }),
-/* 54 */
+/* 52 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 55 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vast_fetch_css__ = __webpack_require__(56);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vast_fetch_css__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vast_fetch_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__vast_fetch_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vast_viewer_css__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vast_viewer_css__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__vast_viewer_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__vast_viewer_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template__ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_VastViewer__ = __webpack_require__(58);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__errorHandler_ErrorHandler__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__template__ = __webpack_require__(56);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_VastViewer__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__errorHandler_ErrorHandler__ = __webpack_require__(50);
 
 
 
@@ -18974,25 +18893,50 @@ const vastFetch = { initialize };
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(11)))
 
 /***/ }),
+/* 54 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 55 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
 /* 56 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 57 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 58 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vast_player__ = __webpack_require__(59);
+const vastFetchTemplate = `
+    <div id="vast-fetch-ui">
+        <div id="fetch-controls">
+            <button id="fetch-button">Fetch</button>
+            <input id="fetch-input" type="number" placeholder="Enter vast id (i.e - 1, 2...)">
+            <label id="fetch-error"></label>
+        </div>
+        <div id="vast-viewer">
+            <div id="buttons-container">
+                <button id="show-xml">show xml</button>
+                <button id="show-video">show video</button>
+            </div>
+            <div id="xml-container" class="view-container"></div>
+            <div id="video-container" class="view-container"></div>
+        </div>
+    </div>
+`;
+/* harmony export (immutable) */ __webpack_exports__["a"] = vastFetchTemplate;
+
+
+/***/ }),
+/* 57 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vast_player__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vast_player___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vast_player__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_xml2js__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_xml2js__ = __webpack_require__(94);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_xml2js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_xml2js__);
 
 
@@ -19053,14 +18997,14 @@ class VastViewer {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(11)))
 
 /***/ }),
-/* 59 */
+/* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(60);
+module.exports = __webpack_require__(59);
 
 
 /***/ }),
-/* 60 */
+/* 59 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19068,15 +19012,15 @@ module.exports = __webpack_require__(60);
 
 var EventEmitter = __webpack_require__(1).EventEmitter;
 var inherits = __webpack_require__(4).inherits;
-var VAST = __webpack_require__(62).VAST;
-var JavaScriptVPAIDPlayer = __webpack_require__(82);
-var FlashVPAIDPlayer = __webpack_require__(84);
-var HTMLVideoPlayer = __webpack_require__(89);
-var MIME = __webpack_require__(37);
+var VAST = __webpack_require__(61).VAST;
+var JavaScriptVPAIDPlayer = __webpack_require__(81);
+var FlashVPAIDPlayer = __webpack_require__(83);
+var HTMLVideoPlayer = __webpack_require__(88);
+var MIME = __webpack_require__(36);
 var EVENTS = __webpack_require__(6);
-var EventProxy = __webpack_require__(40);
+var EventProxy = __webpack_require__(39);
 var LiePromise = __webpack_require__(8);
-var PixelReporter = __webpack_require__(94);
+var PixelReporter = __webpack_require__(93);
 
 function defaults(/*...objects*/) {
     var result = {};
@@ -19290,7 +19234,7 @@ module.exports = VASTPlayer;
 
 
 /***/ }),
-/* 61 */
+/* 60 */
 /***/ (function(module, exports) {
 
 module.exports = function isBuffer(arg) {
@@ -19301,27 +19245,27 @@ module.exports = function isBuffer(arg) {
 }
 
 /***/ }),
-/* 62 */
+/* 61 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports.VAST = __webpack_require__(63);
+exports.VAST = __webpack_require__(62);
 
 
 /***/ }),
-/* 63 */
+/* 62 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var LiePromise = __webpack_require__(8);
-var request = __webpack_require__(65);
-var copy = __webpack_require__(70);
-var defaults = __webpack_require__(71);
-var extend = __webpack_require__(34);
-var nodeifyPromise = __webpack_require__(72);
+var request = __webpack_require__(64);
+var copy = __webpack_require__(69);
+var defaults = __webpack_require__(70);
+var extend = __webpack_require__(33);
+var nodeifyPromise = __webpack_require__(71);
 var push = Array.prototype.push;
-var xmlFromVast = __webpack_require__(73);
+var xmlFromVast = __webpack_require__(72);
 
 var adDefaults = {
     inline: inline,
@@ -19743,7 +19687,7 @@ VAST.prototype.validate = function validate() {
     return { valid: reasons.length === 0, reasons: reasons.length === 0 ? null : reasons };
 };
 
-VAST.pojoFromXML = __webpack_require__(76);
+VAST.pojoFromXML = __webpack_require__(75);
 
 VAST.fetch = function fetch(uri/*, options, callback*/) {
     var options = typeof arguments[1] === 'object' ? arguments[1] || {} : {};
@@ -19763,7 +19707,7 @@ module.exports = VAST;
 
 
 /***/ }),
-/* 64 */
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -19840,17 +19784,17 @@ function immediate(task) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 65 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
  * Module dependencies.
  */
 
-var Emitter = __webpack_require__(66);
-var reduce = __webpack_require__(67);
-var requestBase = __webpack_require__(68);
-var isObject = __webpack_require__(33);
+var Emitter = __webpack_require__(65);
+var reduce = __webpack_require__(66);
+var requestBase = __webpack_require__(67);
+var isObject = __webpack_require__(32);
 
 /**
  * Root reference for iframes.
@@ -19899,7 +19843,7 @@ function isHost(obj) {
  * Expose `request`.
  */
 
-var request = module.exports = __webpack_require__(69).bind(null, Request);
+var request = module.exports = __webpack_require__(68).bind(null, Request);
 
 /**
  * Determine XHR.
@@ -20923,7 +20867,7 @@ request.put = function(url, data, fn){
 
 
 /***/ }),
-/* 66 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -21092,7 +21036,7 @@ Emitter.prototype.hasListeners = function(event){
 
 
 /***/ }),
-/* 67 */
+/* 66 */
 /***/ (function(module, exports) {
 
 
@@ -21121,13 +21065,13 @@ module.exports = function(arr, fn, initial){
 };
 
 /***/ }),
-/* 68 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
  * Module of mixed-in functions shared between node and client code
  */
-var isObject = __webpack_require__(33);
+var isObject = __webpack_require__(32);
 
 /**
  * Clear previous timeout.
@@ -21293,7 +21237,7 @@ exports.field = function(name, val) {
 
 
 /***/ }),
-/* 69 */
+/* 68 */
 /***/ (function(module, exports) {
 
 // The node and browser modules expose versions of this with the
@@ -21331,7 +21275,7 @@ module.exports = request;
 
 
 /***/ }),
-/* 70 */
+/* 69 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21369,7 +21313,7 @@ module.exports = copy;
 
 
 /***/ }),
-/* 71 */
+/* 70 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21411,7 +21355,7 @@ module.exports = function defaults(config, target) {
 
 
 /***/ }),
-/* 72 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21431,14 +21375,14 @@ module.exports = function nodeifyPromise(promise, callback) {
 
 
 /***/ }),
-/* 73 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var secondsToTimestamp = __webpack_require__(74);
-var compileXML = __webpack_require__(75);
+var secondsToTimestamp = __webpack_require__(73);
+var compileXML = __webpack_require__(74);
 
 var creativeCompilers = {
     linear: compileLinear,
@@ -21695,7 +21639,7 @@ module.exports = function xmlFromVast(vast) {
 
 
 /***/ }),
-/* 74 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21717,7 +21661,7 @@ module.exports = function secondsToTimestamp(seconds) {
 
 
 /***/ }),
-/* 75 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -21821,18 +21765,18 @@ module.exports = function compileXML(data, trim) {
 
 
 /***/ }),
-/* 76 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var parseXML = __webpack_require__(77);
-var timestampToSeconds = __webpack_require__(78);
-var stringToBoolean = __webpack_require__(79);
-var extend = __webpack_require__(34);
-var trimObject = __webpack_require__(80);
-var numberify = __webpack_require__(81);
+var parseXML = __webpack_require__(76);
+var timestampToSeconds = __webpack_require__(77);
+var stringToBoolean = __webpack_require__(78);
+var extend = __webpack_require__(33);
+var trimObject = __webpack_require__(79);
+var numberify = __webpack_require__(80);
 
 var creativeParsers = {
     linear: parseLinear,
@@ -22046,7 +21990,7 @@ module.exports = function pojoFromXML(xml) {
 
 
 /***/ }),
-/* 77 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22096,7 +22040,7 @@ module.exports = function parseXML(xml) {
 
 
 /***/ }),
-/* 78 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22114,7 +22058,7 @@ module.exports = function timestampToSeconds(timestamp) {
 
 
 /***/ }),
-/* 79 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22131,7 +22075,7 @@ module.exports = function stringToBoolean(string) {
 
 
 /***/ }),
-/* 80 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22157,7 +22101,7 @@ module.exports = function trimObject(object, deep) {
 
 
 /***/ }),
-/* 81 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22171,18 +22115,18 @@ module.exports = function numberify(value) {
 
 
 /***/ }),
-/* 82 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
 var inherits = __webpack_require__(4).inherits;
-var VPAID = __webpack_require__(35);
+var VPAID = __webpack_require__(34);
 var LiePromise = __webpack_require__(8);
 var EVENTS = __webpack_require__(6);
-var isDesktop = __webpack_require__(36).isDesktop;
-var VPAIDVersion = __webpack_require__(38);
+var isDesktop = __webpack_require__(35).isDesktop;
+var VPAIDVersion = __webpack_require__(37);
 
 function JavaScriptVPAID() {
     VPAID.apply(this, arguments); // call super()
@@ -22295,26 +22239,26 @@ module.exports = JavaScriptVPAID;
 
 
 /***/ }),
-/* 83 */
+/* 82 */
 /***/ (function(module, exports) {
 
 module.exports = window;
 
 
 /***/ }),
-/* 84 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var VPAID = __webpack_require__(35);
+var VPAID = __webpack_require__(34);
 var inherits = __webpack_require__(4).inherits;
 var LiePromise = __webpack_require__(8);
-var uuid = __webpack_require__(85);
-var querystring = __webpack_require__(86);
+var uuid = __webpack_require__(84);
+var querystring = __webpack_require__(85);
 var EVENTS = __webpack_require__(6);
-var VPAIDVersion = __webpack_require__(38);
+var VPAIDVersion = __webpack_require__(37);
 
 function FlashVPAID(container, swfURI) {
     VPAID.apply(this, arguments); // call super()
@@ -22421,7 +22365,7 @@ module.exports = FlashVPAID;
 
 
 /***/ }),
-/* 85 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22442,18 +22386,18 @@ module.exports = function uuid(length) {
 
 
 /***/ }),
-/* 86 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-exports.decode = exports.parse = __webpack_require__(87);
-exports.encode = exports.stringify = __webpack_require__(88);
+exports.decode = exports.parse = __webpack_require__(86);
+exports.encode = exports.stringify = __webpack_require__(87);
 
 
 /***/ }),
-/* 87 */
+/* 86 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22544,7 +22488,7 @@ var isArray = Array.isArray || function (xs) {
 
 
 /***/ }),
-/* 88 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22636,7 +22580,7 @@ var objectKeys = Object.keys || function (obj) {
 
 
 /***/ }),
-/* 89 */
+/* 88 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -22645,12 +22589,12 @@ var objectKeys = Object.keys || function (obj) {
 var EventEmitter = __webpack_require__(1).EventEmitter;
 var inherits = __webpack_require__(4).inherits;
 var LiePromise = __webpack_require__(8);
-var canPlay = __webpack_require__(36).canPlay;
-var sortBy = __webpack_require__(90);
+var canPlay = __webpack_require__(35).canPlay;
+var sortBy = __webpack_require__(89);
 var VPAID_EVENTS = __webpack_require__(6);
-var HTML_MEDIA_EVENTS = __webpack_require__(39);
-var HTMLVideoTracker = __webpack_require__(92);
-var EventProxy = __webpack_require__(40);
+var HTML_MEDIA_EVENTS = __webpack_require__(38);
+var HTMLVideoTracker = __webpack_require__(91);
+var EventProxy = __webpack_require__(39);
 
 function on(video, event, handler) {
     return video.addEventListener(event, handler, false);
@@ -22851,10 +22795,10 @@ module.exports = HTMLVideo;
 
 
 /***/ }),
-/* 90 */
+/* 89 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var objectPath = __webpack_require__(91);
+var objectPath = __webpack_require__(90);
 var sortBy;
 var sort;
 var type;
@@ -22929,7 +22873,7 @@ sortBy = function sortBy() {
 module.exports = sortBy;
 
 /***/ }),
-/* 91 */
+/* 90 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (root, factory){
@@ -23178,15 +23122,15 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 });
 
 /***/ }),
-/* 92 */
+/* 91 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var VideoTracker = __webpack_require__(93);
+var VideoTracker = __webpack_require__(92);
 var inherits = __webpack_require__(4).inherits;
-var EVENTS = __webpack_require__(39);
+var EVENTS = __webpack_require__(38);
 
 function HTMLVideoTracker(video) {
     var self = this;
@@ -23218,7 +23162,7 @@ module.exports = HTMLVideoTracker;
 
 
 /***/ }),
-/* 93 */
+/* 92 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23299,7 +23243,7 @@ module.exports = VideoTracker;
 
 
 /***/ }),
-/* 94 */
+/* 93 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -23378,7 +23322,7 @@ module.exports = PixelReporter;
 
 
 /***/ }),
-/* 95 */
+/* 94 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.12.7
@@ -23390,11 +23334,11 @@ module.exports = PixelReporter;
 
   defaults = __webpack_require__(26);
 
-  builder = __webpack_require__(96);
+  builder = __webpack_require__(95);
 
-  parser = __webpack_require__(101);
+  parser = __webpack_require__(100);
 
-  processors = __webpack_require__(50);
+  processors = __webpack_require__(49);
 
   exports.defaults = defaults.defaults;
 
@@ -23421,7 +23365,7 @@ module.exports = PixelReporter;
 
 
 /***/ }),
-/* 96 */
+/* 95 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.12.7
@@ -23430,7 +23374,7 @@ module.exports = PixelReporter;
   var builder, defaults, escapeCDATA, requiresCDATA, wrapCDATA,
     hasProp = {}.hasOwnProperty;
 
-  builder = __webpack_require__(97);
+  builder = __webpack_require__(96);
 
   defaults = __webpack_require__(26).defaults;
 
@@ -23554,7 +23498,7 @@ module.exports = PixelReporter;
 
 
 /***/ }),
-/* 97 */
+/* 96 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.12.7
@@ -23563,13 +23507,13 @@ module.exports = PixelReporter;
 
   ref = __webpack_require__(3), assign = ref.assign, isFunction = ref.isFunction;
 
-  XMLDocument = __webpack_require__(98);
+  XMLDocument = __webpack_require__(97);
 
-  XMLDocumentCB = __webpack_require__(99);
+  XMLDocumentCB = __webpack_require__(98);
 
   XMLStringWriter = __webpack_require__(27);
 
-  XMLStreamWriter = __webpack_require__(100);
+  XMLStreamWriter = __webpack_require__(99);
 
   module.exports.create = function(name, xmldec, doctype, options) {
     var doc, root;
@@ -23613,7 +23557,7 @@ module.exports = PixelReporter;
 
 
 /***/ }),
-/* 98 */
+/* 97 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.12.7
@@ -23626,7 +23570,7 @@ module.exports = PixelReporter;
 
   XMLNode = __webpack_require__(0);
 
-  XMLStringifier = __webpack_require__(42);
+  XMLStringifier = __webpack_require__(41);
 
   XMLStringWriter = __webpack_require__(27);
 
@@ -23667,7 +23611,7 @@ module.exports = PixelReporter;
 
 
 /***/ }),
-/* 99 */
+/* 98 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.12.7
@@ -23701,9 +23645,9 @@ module.exports = PixelReporter;
 
   XMLDTDNotation = __webpack_require__(20);
 
-  XMLAttribute = __webpack_require__(41);
+  XMLAttribute = __webpack_require__(40);
 
-  XMLStringifier = __webpack_require__(42);
+  XMLStringifier = __webpack_require__(41);
 
   XMLStringWriter = __webpack_require__(27);
 
@@ -24075,7 +24019,7 @@ module.exports = PixelReporter;
 
 
 /***/ }),
-/* 100 */
+/* 99 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.12.7
@@ -24108,7 +24052,7 @@ module.exports = PixelReporter;
 
   XMLDTDNotation = __webpack_require__(20);
 
-  XMLWriterBase = __webpack_require__(43);
+  XMLWriterBase = __webpack_require__(42);
 
   module.exports = XMLStreamWriter = (function(superClass) {
     extend(XMLStreamWriter, superClass);
@@ -24360,7 +24304,7 @@ module.exports = PixelReporter;
 
 
 /***/ }),
-/* 101 */
+/* 100 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Generated by CoffeeScript 1.12.7
@@ -24371,15 +24315,15 @@ module.exports = PixelReporter;
     extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
     hasProp = {}.hasOwnProperty;
 
-  sax = __webpack_require__(102);
+  sax = __webpack_require__(101);
 
   events = __webpack_require__(1);
 
-  bom = __webpack_require__(116);
+  bom = __webpack_require__(115);
 
-  processors = __webpack_require__(50);
+  processors = __webpack_require__(49);
 
-  setImmediate = __webpack_require__(48).setImmediate;
+  setImmediate = __webpack_require__(47).setImmediate;
 
   defaults = __webpack_require__(26).defaults;
 
@@ -24723,7 +24667,7 @@ module.exports = PixelReporter;
 
 
 /***/ }),
-/* 102 */
+/* 101 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(Buffer) {;(function (sax) { // wrapper for non-node envs
@@ -24888,7 +24832,7 @@ module.exports = PixelReporter;
 
   var Stream
   try {
-    Stream = __webpack_require__(105).Stream
+    Stream = __webpack_require__(104).Stream
   } catch (ex) {
     Stream = function () {}
   }
@@ -26295,7 +26239,7 @@ module.exports = PixelReporter;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(28).Buffer))
 
 /***/ }),
-/* 103 */
+/* 102 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26453,7 +26397,7 @@ function fromByteArray (uint8) {
 
 
 /***/ }),
-/* 104 */
+/* 103 */
 /***/ (function(module, exports) {
 
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
@@ -26543,7 +26487,7 @@ exports.write = function (buffer, value, offset, isLE, mLen, nBytes) {
 
 
 /***/ }),
-/* 105 */
+/* 104 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Copyright Joyent, Inc. and other Node contributors.
@@ -26574,10 +26518,10 @@ var inherits = __webpack_require__(5);
 
 inherits(Stream, EE);
 Stream.Readable = __webpack_require__(29);
-Stream.Writable = __webpack_require__(112);
-Stream.Duplex = __webpack_require__(113);
-Stream.Transform = __webpack_require__(114);
-Stream.PassThrough = __webpack_require__(115);
+Stream.Writable = __webpack_require__(111);
+Stream.Duplex = __webpack_require__(112);
+Stream.Transform = __webpack_require__(113);
+Stream.PassThrough = __webpack_require__(114);
 
 // Backwards-compat with node 0.4.x
 Stream.Stream = Stream;
@@ -26676,13 +26620,13 @@ Stream.prototype.pipe = function(dest, options) {
 
 
 /***/ }),
-/* 106 */
+/* 105 */
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
-/* 107 */
+/* 106 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -26691,7 +26635,7 @@ Stream.prototype.pipe = function(dest, options) {
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Buffer = __webpack_require__(25).Buffer;
-var util = __webpack_require__(108);
+var util = __webpack_require__(107);
 
 function copyBuffer(src, target, offset) {
   src.copy(target, offset);
@@ -26767,13 +26711,13 @@ if (util && util.inspect && util.inspect.custom) {
 }
 
 /***/ }),
-/* 108 */
+/* 107 */
 /***/ (function(module, exports) {
 
 /* (ignored) */
 
 /***/ }),
-/* 109 */
+/* 108 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -26966,7 +26910,7 @@ if (util && util.inspect && util.inspect.custom) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(9)))
 
 /***/ }),
-/* 110 */
+/* 109 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {
@@ -27040,7 +26984,7 @@ function config (name) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 111 */
+/* 110 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -27073,7 +27017,7 @@ function config (name) {
 
 module.exports = PassThrough;
 
-var Transform = __webpack_require__(49);
+var Transform = __webpack_require__(48);
 
 /*<replacement>*/
 var util = __webpack_require__(10);
@@ -27093,35 +27037,35 @@ PassThrough.prototype._transform = function (chunk, encoding, cb) {
 };
 
 /***/ }),
-/* 112 */
+/* 111 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(30);
 
 
 /***/ }),
-/* 113 */
+/* 112 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(7);
 
 
 /***/ }),
-/* 114 */
+/* 113 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(29).Transform
 
 
 /***/ }),
-/* 115 */
+/* 114 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(29).PassThrough
 
 
 /***/ }),
-/* 116 */
+/* 115 */
 /***/ (function(module, exports) {
 
 // Generated by CoffeeScript 1.12.7
@@ -27139,14 +27083,14 @@ module.exports = __webpack_require__(29).PassThrough
 
 
 /***/ }),
-/* 117 */
+/* 116 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vast_form_css__ = __webpack_require__(118);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vast_form_css__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__vast_form_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__vast_form_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template__ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__errorHandler_ErrorHandler__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__template__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__errorHandler_ErrorHandler__ = __webpack_require__(50);
 
 
 
@@ -27204,10 +27148,59 @@ const vastForm = { initialize
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(11)))
 
 /***/ }),
-/* 118 */
+/* 117 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 118 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+const vastFormTemplate = `
+<form id="vast-form" action="">
+
+    <div id="form-head">
+        <h2>New vast</h2>
+        <div id="feedback"></div>
+    </div>
+
+    <div class="field-wrapper">
+        <label for="">Vast url</label>
+        <input type="text" name="vast_url">
+    </div>
+
+    <div class="field-wrapper">
+        <label for="">Position</label>
+        <select name="position">
+            <option value="top_left">Top left</option>
+            <option value="top_middle">Top middle</option>
+            <option value="top_right">Top right</option>
+            <option value="middle_left">Middle left</option>
+            <option value="middle_right">Middle right</option>
+            <option value="bottom_left">Bottom left</option>
+            <option value="bottom_middle">Bottom middle</option>
+            <option value="bottom_right">Bottom right</option>
+        </select>
+    </div>
+
+    <div class="field-wrapper">
+        <label for="">Hide ui</label>
+        <select name="hide_ui">
+            <option value="0">False</option>
+            <option value="1">True</option>
+        </select>
+    </div>
+
+    <div class="field-wrapper submit-field">
+        <button type="submit">Create</button>
+    </div>
+
+</form>
+`;
+/* harmony export (immutable) */ __webpack_exports__["a"] = vastFormTemplate;
+
 
 /***/ })
 /******/ ]);

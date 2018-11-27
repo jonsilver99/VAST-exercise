@@ -6,7 +6,7 @@ const vastsRouter = require('./routers/vastRouter')
 const PORT = process.env.PORT || 4200;
 
 const server = express();
-dbConnection.connect();
+dbConnection.connect((err) => { console.log(err) })
 
 server.use(bodyParser.urlencoded({ extended: false }))
 server.use(bodyParser.json())
