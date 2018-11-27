@@ -11,6 +11,8 @@ let env = (() => {
         return null;
 })();
 
+console.log(env)
+
 const dbConnection = mysql.createConnection({
     host: env.DB_HOST,
     user: env.DB_USER,
