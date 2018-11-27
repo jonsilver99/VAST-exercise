@@ -10,8 +10,8 @@ router.get('/fetch_vast', async function (req, res) {
         // sanitize input
         let vastId = dbHandler.sanitize(req.query.id);
 
-        // let q = `SELECT * FROM cheq_exercise.vasts WHERE id=${vastId}`
-        let q = `SELECT * FROM vasts WHERE id=${vastId}`
+        let q = `SELECT * FROM heroku_7fcf0ba2a626332.vasts WHERE id=${vastId}`
+        // let q = `SELECT * FROM vasts WHERE id=${vastId}`
         let vastData = await dbHandler.fetch(q) // get vast's data from db
         let vastXML;
         if (!vastData)
