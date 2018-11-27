@@ -18947,7 +18947,8 @@ async function fetchVast(id) {
     try {
         // reveal vast viewer
         vastViewer.reveal();
-        let vastUrl = `http://localhost:4200/vasts/fetch_vast?id=${id}`;
+        let vastUrl = `/vasts/fetch_vast?id=${id}`;
+        console.log('changed');
         // fetch vast xml
         let vastString = await $.ajax({ method: 'GET', url: vastUrl, dataType: 'text' });
         if (!vastString) throw 'Couldnt fetch vast string';
@@ -27191,7 +27192,6 @@ const vastForm = { initialize
 
     /*
     Example vasts to create
-    
     https://video.combotag.com/17.xml
     http://demo.tremorvideo.com/proddev/vast/vast2RegularLinear.xml
     http://shadowcdn-01.yumenetworks.com/ym/1B3uA91O2152/1349/levLYHWa/vpaid_u_as3.xml
