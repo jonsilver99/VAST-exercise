@@ -11,7 +11,7 @@ let env = (() => {
         return null;
 })();
 
-console.log(env)
+console.log('env', env)
 
 const dbConnection = mysql.createConnection({
     host: env.DB_HOST,
