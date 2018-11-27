@@ -11,16 +11,6 @@ let env = (() => {
         return null;
 })();
 
-console.log('env', env)
-
-// const dbConnection = mysql.createPool({
-//     connectionLimit: 10,
-//     host: env.DB_HOST,
-//     user: env.DB_USER,
-//     password: env.DB_PASS,
-//     database: env.DB_SCHEMA
-// });
-
 const dbConnection = mysql.createConnection({
     host: env.DB_HOST,
     user: env.DB_USER,
